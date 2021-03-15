@@ -1,4 +1,4 @@
-@media (max-width: 1512px) {
+@media (max-width: 1530px) {
     .main__header {
         font-size: 54px;
     }
@@ -11,7 +11,7 @@
        
     }
     body {
-        max-width: 540px;
+        max-width: 576px;
         width: 100%;
     }
     .button_call {
@@ -176,7 +176,20 @@
         flex-direction: row;
     }
 }
+
 @media (min-width: 577px) and (max-width: 1024px) {
+    .services {
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .services__header {
+        padding-top: 250px;
+        align-self: center;
+    }
+    .services__button {
+        align-self: center;
+        margin-left: 0;
+    }
     .button_shadow {
         display: none;
     }
@@ -212,17 +225,26 @@
         display: block;
     }
     .main__header {
-        font-size: 54px;
+        font-size: 48px;
         padding-top: 180px;
     }
+    .services__header {
+        align-self: center;
+    }
     .services__item {
-        width: 30%;   
+        width: 30%; 
+        align-self: center; 
+    }
+    .services__item:nth-child(2n+1) {
+        margin: 0;
     }
     .services__list {
         margin: 0 auto;
         flex-direction: row;
         flex-wrap: wrap;
-        padding-right: 100px;
+    }
+    .button_center {
+        align-self: center;
     }
     .example__flex {
         display: flex;
@@ -244,6 +266,9 @@
     .button_center {
         margin-left: 33%;
     }
+    .services .button_center {
+        margin-left: 0;
+    }
     .cost-bar__header {
         padding-top: 70px;
         padding-left: 0;
@@ -259,6 +284,25 @@
     }
     .footer__column {
         margin-right: 10%;
+    }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+    .main__header {
+        max-width: 100%;
+    }
+    .main__subtitle {
+        font-size: 16px;
+    }
+    .header {
+        font-size: 38px;
+    }
+    .cost-bar__header {
+        font-size: 28px;
+        max-width: 90%;
+    }
+    .cost-bar__subtitle {
+        font-size: 20px;
+        max-width: 90%;
     }
 }
 @media (min-width: 1025px) {

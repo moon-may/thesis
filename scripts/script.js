@@ -43,10 +43,7 @@
              var mySwiper = new Swiper('.swiper-container', {
                 loop: true,       //слайды крутятся непрерывным циклом
                 direction: 'horizontal',
-             /*   breakpoints: {
-                    
-                  },*/
-                slidesPerView: 'auto',
+             //   slidesPerView: 'auto',
                 slidesOffsetBefore: 100,
                 pagination: {
                     el: '.swiper-pagination',
@@ -57,9 +54,18 @@
                     prevEl: '.example__button',
                   },
                 breakpoints: {
-                    1025: {
+                    1123: {
+                        slidesPerView: 3,
                         spaceBetween: 50,
                     },
+                    320: {
+                        slidesPerView: 1, 
+                        spaceBetween: 50,
+                    },
+                    578: {
+                        slidesPerView: 2,
+                        spaceBetween: 50,
+                    }
                 },
               });
 //отправка формы на почту 

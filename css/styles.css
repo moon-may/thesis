@@ -188,9 +188,7 @@ html, body {
     font-size: 54px;
     font-weight: 700;
 }
-.services__header {
-    padding-top: 250px;
-}
+
 .services__list {
     padding: 0;
     display: flex;
@@ -242,7 +240,9 @@ html, body {
 .button_center {
    margin-left:40%;
 }
-
+.services__header {
+    padding-top: 250px;
+}
 .example__article {
     display: inline-block;
 }
@@ -252,7 +252,6 @@ html, body {
 .example__subtitle {
     color: #8993ad;
     font-size: 18px;
-    text-align: center;
     font-weight: 400;
 }
 .example__container {
@@ -261,7 +260,7 @@ html, body {
 .example__button-container {
     position: absolute;
     display: flex;
-    width: 100vw;
+    width: 98vw;
     height: 360px;
     justify-content: space-between;
 }
